@@ -1,12 +1,90 @@
-# React + Vite
+# Employee Intelligence Portal
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A sophisticated ReactJS-based enterprise application designed for high-fidelity talent management. This portal integrates real-time data analytics, biometric security systems, and global geographic insights into a high-performance executive dashboard.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Project Overview
 
-## Expanding the ESLint configuration
+This application serves as a comprehensive tool for monitoring and managing global talent. It features an advanced design system centered on Glassmorphism principles, providing a clear, modern, and professional aesthetic while maintaining high usability standards.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Core Implementation Details
+
+*   **Secure Authentication**: A robust authentication node utilizing React Context for session management and state persistence.
+*   **Real-time API Integration**: Live data synchronization with the Jotish REST service, featuring automated data mapping and salary normalization.
+*   **Biometric Identity Verification**: Integrated camera modules allowing for on-site security profile generation and identity proofing.
+*   **Geographic Operations Map**: Interactive visualization of the workforce distribution across global regional sectors.
+*   **Executive Analytics**: High-resolution charting of employee compensation tiers for the top 10 associates.
+
+---
+
+## Technical Architecture
+
+The portal is engineered using a modern JavaScript stack focused on performance, modularity, and scalability.
+
+*   **Frontend Framework**: React 19 (Functional Components, Hooks, Context API)
+*   **State Management**: Secure Authentication Context with LocalStorage persistence.
+*   **Design System**: Custom CSS3 Layouts (Glassmorphism, Responsive Grid Systems)
+*   **Animations**: Framer Motion 12 (Staggered Loaders, Seamless Page Transitions)
+*   **Data Services**: Axios-based asynchronous communication layer.
+*   **Visualization**: Recharts (Analytics) and React-Leaflet (Mapping).
+*   **Build Environment**: Vite (High-performance HMR and bundling).
+
+---
+
+## Installation and Deployment
+
+### Development Environment Setup
+
+1.  **Clone and Navigate**:
+    ```bash
+    cd Jotish_Project-
+    ```
+
+2.  **Dependency Installation**:
+    ```bash
+    npm install
+    ```
+
+3.  **Launch Local Development Server**:
+    ```bash
+    npm run dev
+    ```
+    *The application will be accessible at `http://localhost:5173/`.*
+
+---
+
+## API and Security Specifications
+
+### Data Service Integration
+The application interfaces with the following production endpoint for real-time intelligence:
+*   **Endpoint URL**: `https://backend.jotish.in/backend_dev/gettabledata.php`
+*   **Method**: `POST`
+*   **Payload Specification**:
+    ```json
+    {
+       "username": "test",
+       "password": "123456"
+    }
+    ```
+
+### Authentication Credentials
+For evaluation and testing purposes, use the following local credentials:
+*   **Username**: `testuser`
+*   **Password**: `Test123`
+
+---
+
+## Mandatory Deliverables Status
+
+*   **Authentication Portal**: Completed
+*   **Data Intelligence List Feed**: Completed
+*   **Detailed Associate Profiles**: Completed
+*   **Biometric Photo Capture System**: Completed
+*   **Identity Sync Confirmation Result**: Completed
+*   **Salary Distribution Bar Charts**: Completed
+*   **Global Distribution Map**: Completed
+
+---
+
+**Institutional Note**: This project was developed to demonstrate technical proficiency in ReactJS, secure API integration, and advanced UI/UX design suitable for enterprise-grade applications.
