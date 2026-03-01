@@ -30,6 +30,20 @@ The portal is engineered using a modern JavaScript stack focused on performance,
 *   **Visualization**: Recharts (Analytics) and React-Leaflet (Mapping).
 *   **Build Environment**: Vite (High-performance HMR and bundling).
 
+
+
+## Screenshots
+
+<img width="1909" height="861" alt="Screenshot 2026-03-01 152712" src="https://github.com/user-attachments/assets/4c3d3529-e103-4cb4-a67c-2b49292b4426" />
+
+<img width="1919" height="1079" alt="Screenshot 2026-03-01 152811" src="https://github.com/user-attachments/assets/38d468c0-7c54-443d-b2ef-b6b20a97902f" />
+
+<img width="1911" height="1079" alt="Screenshot 2026-03-01 152828" src="https://github.com/user-attachments/assets/5b1bd63f-5829-43a1-9c4e-b62768e3a537" />
+
+<img width="1919" height="1079" alt="Screenshot 2026-03-01 152842" src="https://github.com/user-attachments/assets/7e7149b0-2c72-49db-bdbe-b7108dcebd15" />
+
+
+
 ---
 
 ## Installation and Deployment
