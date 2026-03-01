@@ -122,37 +122,69 @@ const ListPage = () => {
             </div>
 
             {/* Fluid Controls */}
-            <div className="controls-row">
-                <div className="search-container">
-                    <Search className="search-icon" size={20} />
-                    <input
-                        type="text"
-                        placeholder="Search associates, roles or IDs..."
-                        className="search-input"
-                        value={searchQuery}
-                        onChange={(e) => setSearchQuery(e.target.value)}
-                    />
+            <div className="controls-row" style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem', marginBottom: '2rem' }}>
+                <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
+                    <motion.button
+                        whileHover={{ scale: 1.05, x: 5 }}
+                        whileTap={{ scale: 0.95 }}
+                        onClick={() => navigate('/charts')}
+                        style={{
+                            background: 'linear-gradient(135deg, var(--accent-color), var(--accent-secondary))',
+                            padding: '0.8rem 1.5rem',
+                            fontSize: '0.9rem'
+                        }}
+                    >
+                        <TrendingUp size={18} /> View Salary Analytics
+                    </motion.button>
+                    <motion.button
+                        whileHover={{ scale: 1.05, x: 5 }}
+                        whileTap={{ scale: 0.95 }}
+                        onClick={() => navigate('/map')}
+                        style={{
+                            background: 'rgba(255,255,255,0.05)',
+                            border: '1px solid var(--border-color)',
+                            padding: '0.8rem 1.5rem',
+                            fontSize: '0.9rem',
+                            color: 'white'
+                        }}
+                    >
+                        <MapPin size={18} /> Interactive Map View
+                    </motion.button>
                 </div>
 
-                <div style={{ display: 'flex', gap: '0.8rem', overflowX: 'auto', padding: '0.5rem 0' }}>
-                    {cities.map(city => (
-                        <motion.button
-                            key={city}
-                            whileHover={{ scale: 1.1 }}
-                            whileTap={{ scale: 0.95 }}
-                            onClick={() => setSelectedCity(city)}
-                            style={{
-                                background: selectedCity === city ? 'var(--accent-color)' : 'rgba(255,255,255,0.05)',
-                                color: selectedCity === city ? 'white' : 'var(--text-muted)',
-                                padding: '0.6rem 1.4rem',
-                                border: 'none',
-                                borderRadius: '12px',
-                                fontSize: '0.85rem'
-                            }}
-                        >
-                            {city}
-                        </motion.button>
-                    ))}
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: '2rem', flexWrap: 'wrap' }}>
+                    <div className="search-container" style={{ flex: 1, minWidth: '300px' }}>
+                        <Search className="search-icon" size={20} />
+                        <input
+                            type="text"
+                            placeholder="Search associates, roles or IDs..."
+                            className="search-input"
+                            value={searchQuery}
+                            onChange={(e) => setSearchQuery(e.target.value)}
+                        />
+                    </div>
+
+                    <div style={{ display: 'flex', gap: '0.8rem', overflowX: 'auto', padding: '0.5rem 0' }}>
+                        {cities.map(city => (
+                            <motion.button
+                                key={city}
+                                whileHover={{ scale: 1.1 }}
+                                whileTap={{ scale: 0.95 }}
+                                onClick={() => setSelectedCity(city)}
+                                style={{
+                                    background: selectedCity === city ? 'var(--accent-color)' : 'rgba(255,255,255,0.05)',
+                                    color: selectedCity === city ? 'white' : 'var(--text-muted)',
+                                    padding: '0.6rem 1.4rem',
+                                    border: 'none',
+                                    borderRadius: '12px',
+                                    fontSize: '0.85rem',
+                                    boxShadow: 'none'
+                                }}
+                            >
+                                {city}
+                            </motion.button>
+                        ))}
+                    </div>
                 </div>
             </div>
 
