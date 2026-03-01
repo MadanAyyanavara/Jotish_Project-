@@ -8,6 +8,24 @@ A sophisticated ReactJS-based enterprise application designed for high-fidelity 
 
 This application serves as a comprehensive tool for monitoring and managing global talent. It features an advanced design system centered on Glassmorphism principles, providing a clear, modern, and professional aesthetic while maintaining high usability standards.
 
+---
+
+## Visual Documentation
+
+### Analytical Dashboard
+![Dashboard Interface](./public/screenshots/dashboard.png)
+
+### Authentication Node
+![Login Interface](./public/screenshots/login.png)
+
+### Salary Distribution Analytics
+![Salary Bar Chart](./public/screenshots/analytics.png)
+
+### Global Regional Mapping
+![Interactive Map](./public/screenshots/map.png)
+
+---
+
 ### Core Implementation Details
 
 *   **Secure Authentication**: A robust authentication node utilizing React Context for session management and state persistence.
